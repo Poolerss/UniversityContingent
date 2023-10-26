@@ -22,16 +22,8 @@ public class Professor extends Person {
     @Override
     public void print() {
         super.print();
-        System.out.print("teachers at " + getFacultyName() + ".");
-        switch (getGender()) {
-            case MALE:
-                System.out.print("He ");
-                break;
-            case FEMALE:
-                System.out.print("She ");
-                break;
-        }
-        System.out.println("has " + getAkademicDegree() + " degree in " + getNameOfSpeciality() + ".");
+        System.out.println("teachers at " + getFacultyName() + ". " + getGender().getGenderAppeal() +
+                " has " + getAkademicDegree() + " degree in " + getNameOfSpeciality() + ".");
     }
 }
 

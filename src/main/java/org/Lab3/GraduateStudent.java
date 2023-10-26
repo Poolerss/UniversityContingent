@@ -14,17 +14,10 @@ public class GraduateStudent extends Person{
     @Override
     public void print() {
         super.print();
-        System.out.print("studies at " + getFacultyName() + ".");
-        switch (getGender()) {
-            case MALE:
-                System.out.print(" His ");
-                break;
-            case FEMALE:
-                System.out.print("Her ");
-                break;
-        }
-        System.out.println("thesis title is " + "\"" + getDissertationTopic() + "\" .");
-    }
+        System.out.print("studies at " + getFacultyName() + ". "
+                + getGender().getGenderAppeal() + " thesis title is " + "\""
+                + getDissertationTopic() + "\" .");
+            }
 }
 
 

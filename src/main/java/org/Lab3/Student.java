@@ -21,16 +21,8 @@ public class Student extends Person{
     @Override
     public void print() {
         super.print();
-        System.out.print("studies at " + getFacultyName() + ".");
-        switch (getGender()) {
-            case MALE:
-                System.out.print("He ");
-                break;
-            case FEMALE:
-                System.out.print("She ");
-                break;
-        }
-        System.out.println("is " + getCourseNumber()+ "\'th year " + getLevelOfEducation() + " student.");
+        System.out.println("studies at " + getFacultyName() + ". " + getGender().getGenderAppeal() + " is "
+                + getCourseNumber()+ "\'th year " + getLevelOfEducation() + " student.");
     }
 }
 

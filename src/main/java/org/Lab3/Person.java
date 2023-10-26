@@ -50,18 +50,8 @@ public class Person {
     }
 
     public void print() {
-        System.out.print("Tnis is " + name + ".");
-        switch (getGender()) {
-            case MALE:
-                System.out.print("He ");
-                break;
-            case FEMALE:
-                System.out.print("She ");
-                break;
-        }
-
-
-        }
+        System.out.print("Tnis is " + name + ". " + getGender().getGenderAppeal() + " ");
+                    }
     public static void printAll(ArrayList<Person> personList) {
         personList.forEach(Person::print);
     }
